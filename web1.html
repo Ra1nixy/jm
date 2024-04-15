@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Jam</title>
+<link rel="stylesheet" href="web.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Selamat Datang di Toko JamJek</h1>
+        <p>Temukan jam terbaik untuk gaya Anda.</p>
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Cari produk...">
+            <select id="filter">
+                <option value="all">Semua</option>
+                <option value="klasik">Jam Tangan Klasik</option>
+                <option value="digital">Jam Tangan Digital</option>
+                <option value="sporty">Jam Tangan Sporty</option>
+            </select>
+            <button id="search-button">Cari</button>
+        </div>
+        <div class="sort">
+            <label for="sort-by">Urutkan berdasarkan:</label>
+            <select id="sort-by">
+                <option value="name">Nama</option>
+                <option value="price">Harga</option>
+            </select>
+            <button id="sort-direction">Naik</button>
+        </div>
+    </header>
+    <section class="products">
+        <div class="product" data-id="1" data-name="Jam Tangan Klasik" data-price="500">
+            <img src="1.jpg" alt="Jam 1">
+            <h2>Jam Tangan Klasik</h2>
+            <p>Harga: Rp10.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+        <div class="product" data-id="2" data-name="Jam Tangan Digital" data-price="300000">
+            <img src="4.jpg" alt="Jam 2">
+            <h2>Jam Tangan Digital</h2>
+            <p>Harga: Rp300.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+        <div class="product" data-id="3" data-name="Jam Tangan Sporty" data-price="700000">
+            <img src="3.jpg" alt="Jam 3">
+            <h2>Jam Tangan Sporty</h2>
+            <p>Harga: Rp700.000</p>
+            <button class="add-to-cart">Tambah ke Keranjang</button>
+        </div>
+    </section>
+<section class="cart">
+    <h2>Keranjang Belanja</h2>
+    <ul class="cart-items"></ul>
+    <p class="total">Total: Rp0</p>
+    <div class="payment">
+        <label for="dana-number">Nomor Dana:</label>
+        <input type="text" id="dana-number" placeholder="Masukkan nomor Dana">
+        <button class="checkout">Bayar dengan Dana</button>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Toko Jam</p>
+    </footer>
+</div>
+<script src="web.js"></script>
+</body>
+</html>
